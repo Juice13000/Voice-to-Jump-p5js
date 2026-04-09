@@ -31,6 +31,11 @@ function resetGame() {
 }
 
 function draw() {
+
+   let fps = frameRate();
+  fill(0);
+  text("FPS: " + fps.toFixed(2), 10, 20);
+  
   if (score < 10) {
     worldLevel = 1;
     bgTarget = color(20, 30, 50);
@@ -77,6 +82,13 @@ function draw() {
     text("Score : " + score, width / 2, height / 2 + 30);
     text("Clique pour rejouer", width / 2, height / 2 + 80);
   }
+
+  let fps = frameRate();
+  fill(255);
+  noStroke();
+  textSize(14);
+  textAlign(LEFT, TOP);
+  text("FPS: " + fps.toFixed(0), 10, 50);
 }
 
 function displayStaticScene() {
