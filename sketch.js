@@ -50,7 +50,7 @@ function draw() {
     textAlign(CENTER, CENTER);
     if (!mic.enabled) {
       textSize(32);
-      text("CLIQUE POUR ACTIVER LE MICRO", width / 2, height / 2);
+      text("ACTIVER LE MICRO", width / 2, height / 2);
     } else {
       textSize(80);
       text(ceil(startTimer), width / 2, height / 2);
