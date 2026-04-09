@@ -82,13 +82,6 @@ function draw() {
     text("Score : " + score, width / 2, height / 2 + 30);
     text("Clique pour rejouer", width / 2, height / 2 + 80);
   }
-
-  let fps = frameRate();
-  fill(255);
-  noStroke();
-  textSize(14);
-  textAlign(LEFT, TOP);
-  text("FPS: " + fps.toFixed(0), 10, 50);
 }
 
 function displayStaticScene() {
